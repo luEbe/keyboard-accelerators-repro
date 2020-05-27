@@ -1,0 +1,1 @@
+C:\Users\lukas.eberhardt\source\repos\KeyboardAcceleratorTest\KeyboardAcceleratorTest\KeyboardAcceleratorTest.csproj;x86

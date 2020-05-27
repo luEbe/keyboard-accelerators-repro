@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="KeyboardAcceleratorTest.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KeyboardAcceleratorTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Margin="300 300 300 300" BorderBrush="Black" BorderThickness="2">
+        <Grid.KeyboardAccelerators>
+            <KeyboardAccelerator Key="{x:Bind AcceleratorKey}" Modifiers="{x:Bind AcceleratorModifiers}" Invoked="{x:Bind ChangeTextBlockText}"/>
+        </Grid.KeyboardAccelerators>
+        <TextBlock Name="textBlock" Text="Change Text with Ctrl + Shift + O" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" TextAlignment="Center"/>
+    </Grid>
+</Page>
